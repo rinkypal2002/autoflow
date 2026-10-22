@@ -1,0 +1,28 @@
+{
+  "phase": "Database Phase 3 Step 7B.5B",
+  "name": "Frontend PostgreSQL Output-Source Shadow Integration",
+  "defaultMode": "legacy",
+  "visibleBindingPickerSource": "legacy",
+  "databaseWrites": 0,
+  "files": [
+    "src/lib/outputSourceMode.ts",
+    "src/lib/outputSourceApi.ts",
+    "src/lib/outputSourceParity.ts",
+    "src/pages/WorkspaceEditorPage.tsx",
+    "src/vite-env.d.ts",
+    "tests/outputSourceParity.test.ts",
+    ".env.example",
+    "package.json",
+    "README_STEP7B5B.txt",
+    "STEP7B5B_TEST_REPORT.md",
+    "STEP7B5B_MANIFEST.json"
+  ],
+  "verification": {
+    "typecheck": "PASS",
+    "unitAssertionsPassed": 18,
+    "unitAssertionsFailed": 0,
+    "legacyNetworkCalls": 0,
+    "eslint": "PASS",
+    "productionBuild": "RUN_ON_WINDOWS_AFTER_INSTALL"
+  }
+}

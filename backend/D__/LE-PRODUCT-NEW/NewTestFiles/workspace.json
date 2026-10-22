@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "folders": {
+    "root": {
+      "id": "root",
+      "name": "Workspace",
+      "parentId": null,
+      "type": "folder",
+      "createdAt": "2026-07-25T21:44:11.204Z",
+      "updatedAt": "2026-07-25T21:44:11.204Z"
+    }
+  },
+  "workflows": {}
+}

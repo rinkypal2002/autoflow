@@ -1,0 +1,60 @@
+{
+  "phase": "Database Phase 3 Step 7B.5A",
+  "title": "PostgreSQL Output-Source Read API Foundation",
+  "baseline": "Certified Step 7B.4 live transactional output indexing",
+  "defaultEnabled": false,
+  "frontendChanged": false,
+  "databaseWritesAdded": false,
+  "files": [
+    {
+      "path": "README_STEP7B5A.txt",
+      "sha256": "99e81c826461f70d12e27a6107dd579f95cb51abae8e808fad43496f587c93e1",
+      "bytes": 1301
+    },
+    {
+      "path": "STEP7B5A_TEST_REPORT.md",
+      "sha256": "eda0420244a74cc0d4d621296ed0098a0a0f61f9e5e5885fd45f8cb0602b8151",
+      "bytes": 1964
+    },
+    {
+      "path": "backend\\config.js",
+      "sha256": "a5377397d582ec3ee56cb4cb69053b1db1810068f94989ba8531242e2a56793d",
+      "bytes": 5141
+    },
+    {
+      "path": "backend\\server.js",
+      "sha256": "7b5da4af3bacc1b5c0ef54c46468a1c1de33d241f1e745e579c85198aad57669",
+      "bytes": 67867
+    },
+    {
+      "path": "backend\\.env.example",
+      "sha256": "4b5f2bc875864a45d3397d38a818b7aa865c0fac8166096eb3787e9caf70c3d3",
+      "bytes": 1449
+    },
+    {
+      "path": "backend\\package.json",
+      "sha256": "e37be1b9ffd918576b51365cac507309cafe543df8522d676a85f35684656b51",
+      "bytes": 1357
+    },
+    {
+      "path": "backend\\db\\outputSourceReadRepository.js",
+      "sha256": "86594f0d104e0466b201eb3c9f6eed2bdb0188ace888a15afac4553efff92a64",
+      "bytes": 8588
+    },
+    {
+      "path": "backend\\routes\\postgresOutputSourceRoutes.js",
+      "sha256": "866fe222cfb16c307e03f0f415a5b93085fce8303d886b69dee3606deb7eb755",
+      "bytes": 9613
+    },
+    {
+      "path": "backend\\scripts\\testOutputSourceReadApi.js",
+      "sha256": "279ddc6f3a6fa088bab97721f835add06e2b73d7a2388b79ec3f9a847925e2d8",
+      "bytes": 8743
+    },
+    {
+      "path": "backend\\scripts\\inspectOutputSourceReadApi.js",
+      "sha256": "b5368ef360c057d000e2bbdd8d39b28ea597f518379243f1fdce5df54b3a6b75",
+      "bytes": 3705
+    }
+  ]
+}

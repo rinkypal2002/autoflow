@@ -1,0 +1,67 @@
+{
+  "phase": "Database Phase 3 Step 7B.4",
+  "featureFlag": "EXECUTION_OUTPUT_INDEX_WRITE_ENABLED",
+  "featureFlagDefault": false,
+  "files": [
+    {
+      "path": "backend/config.js",
+      "sha256": "d34d214f92ffc32bd60fdc1a69f426b371ece63f33fd3f0a94513f55f1e4b760",
+      "bytes": 4734
+    },
+    {
+      "path": "backend/server.js",
+      "sha256": "150c0fc82b161d45b27f7472adde02e6f7e48d946aa4104acba84951c33a3c70",
+      "bytes": 66783
+    },
+    {
+      "path": "backend/routes/postgresExecutionRunRoutes.js",
+      "sha256": "e091271735c8578fbcb6caf7243b014b86fe4528ece92bf43823289830b4443d",
+      "bytes": 7549
+    },
+    {
+      "path": "backend/db/executionRepository.js",
+      "sha256": "f5186cb80f93efeb4e79ae607d1084ee467c34f989884c5b2dd37aeb5f2f427b",
+      "bytes": 26715
+    },
+    {
+      "path": "backend/db/executionOutputIndexRepository.js",
+      "sha256": "ff3f8c8f20edb04e5e71ba330b5b0605277cfa768cd8c4b343a999d001a52f54",
+      "bytes": 7160
+    },
+    {
+      "path": "backend/db/liveOutputIndex.js",
+      "sha256": "5955d192bab5a40418df6b9136100b3f01641118f7efd2f97619c73df5ea31eb",
+      "bytes": 3085
+    },
+    {
+      "path": "backend/scripts/testLiveOutputIndexIntegration.js",
+      "sha256": "bde9d8a889e45ed14abadde9c6404d31354291bf6f29d121c1c7459de53ed366",
+      "bytes": 3586
+    },
+    {
+      "path": "backend/scripts/inspectLiveOutputIndexStatus.js",
+      "sha256": "50ad52e1c7e096f31d6d5ff2eb82f66d1767e1778907c2bf21a35fabbd7d25ee",
+      "bytes": 4207
+    },
+    {
+      "path": "backend/package.json",
+      "sha256": "b7c6137012137c4f0c90282b8d499f40b919b863758e2e748ede116ed2b4d00c",
+      "bytes": 1205
+    },
+    {
+      "path": "backend/.env.example",
+      "sha256": "9233b94e00d2fad08f551edd00e18e3ee4b661b9643765c417bb872f6b2bcca7",
+      "bytes": 1326
+    },
+    {
+      "path": "README_STEP7B4.txt",
+      "sha256": "6a7bbe80de4135614406155fa04d89119aefadfa50ad9a08a33d91920b254b29",
+      "bytes": 1729
+    },
+    {
+      "path": "STEP7B4_TEST_REPORT.md",
+      "sha256": "b96597aa8f882d77e1b0ef96317ac903c8b63695606723b246b678230b1dac6d",
+      "bytes": 813
+    }
+  ]
+}

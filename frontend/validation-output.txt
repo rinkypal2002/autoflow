@@ -1,0 +1,7 @@
+Static validation completed:
+- Only the stale Step 7B.5B.1 test assertion was changed.
+- Production source files are unchanged.
+- The new expectation matches Step 7B.5C behavior: postgres mode is active and cutoverBlocked is false.
+
+Container runtime note:
+The copied project node_modules contains Windows esbuild binaries, so Linux-side npm execution is not possible in this environment. Run the provided Windows commands in the certified project; no npm install is required.

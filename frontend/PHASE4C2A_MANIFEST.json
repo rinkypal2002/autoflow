@@ -1,0 +1,42 @@
+{
+  "phase": "4C.2A",
+  "name": "Detailed Plugin Mapping Remediation Report",
+  "safety": {
+    "databaseWrites": 0,
+    "frontendCatalogueChanges": 0,
+    "executionRoutingChanges": 0,
+    "automaticSourceFixes": 0
+  },
+  "files": [
+    {
+      "path": "README_PHASE4C2A.txt",
+      "size": 1281,
+      "sha256": "38c2cef29882d59bffbc292f070a49e7bef33c366d2ffc989b86c6ba3ef8140a"
+    },
+    {
+      "path": "package.json",
+      "size": 2719,
+      "sha256": "f97b29a14dbccdd48b5c94305bc92d8deb4e8ba8468acc45cec3f3094184e9f8"
+    },
+    {
+      "path": "scripts/inspect-plugin-mapping-remediation.mjs",
+      "size": 746,
+      "sha256": "2cbe01f2d2de4babb3a5b5df2ea592419696b582a1880b6fa68018191e5dddc7"
+    },
+    {
+      "path": "scripts/pluginMappingRemediationCli.ts",
+      "size": 5320,
+      "sha256": "0211ddd1c26948198d6354df1191a8768cb259477f4b25b59d69b2ee38c758fe"
+    },
+    {
+      "path": "src/lib/pluginMappingRemediation.ts",
+      "size": 30560,
+      "sha256": "c3b78de17192fb05d978f6efc3c729633df91087ab8f88ee3ec40235cf300a6f"
+    },
+    {
+      "path": "tests/pluginMappingRemediation.test.ts",
+      "size": 6547,
+      "sha256": "ef27b9915daf555b7204601dcfbd24d2d0994851b80823440065f35b0c515ee3"
+    }
+  ]
+}

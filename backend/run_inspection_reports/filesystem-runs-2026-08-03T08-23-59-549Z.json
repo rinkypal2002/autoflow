@@ -1,0 +1,49 @@
+{
+  "formatVersion": 1,
+  "createdAt": "2026-08-03T08:23:59.548Z",
+  "workspaceRoot": "D:\\LE-PRODUCT-NEW\\NewTestFiles",
+  "runsRoot": "D:\\LE-PRODUCT-NEW\\NewTestFiles\\.runs",
+  "summary": {
+    "workflowRunDirectories": 10,
+    "snapshotFiles": 106,
+    "validSnapshots": 103,
+    "invalidSnapshots": 3,
+    "totalSnapshotBytes": 2374208,
+    "statuses": {
+      "completed": 49,
+      "error": 54
+    }
+  },
+  "invalidFiles": [
+    {
+      "relativePath": "3f2f7a60-c1f2-44fc-ba02-844e4b6863bd\\48344c3c-ad5c-452f-988d-eff244f2d4e1.json",
+      "absolutePath": "D:\\LE-PRODUCT-NEW\\NewTestFiles\\.runs\\3f2f7a60-c1f2-44fc-ba02-844e4b6863bd\\48344c3c-ad5c-452f-988d-eff244f2d4e1.json",
+      "workflowDirectory": "3f2f7a60-c1f2-44fc-ba02-844e4b6863bd",
+      "fileName": "48344c3c-ad5c-452f-988d-eff244f2d4e1.json",
+      "category": "INVALID_JSON",
+      "reasons": [
+        "Unexpected non-whitespace character after JSON at position 5672 (line 186 column 2)"
+      ]
+    },
+    {
+      "relativePath": "6c5feb36-7e29-45c0-8851-7ee3de635ebc\\c69a785e-5735-4c4b-949d-83288e4d4bda.json",
+      "absolutePath": "D:\\LE-PRODUCT-NEW\\NewTestFiles\\.runs\\6c5feb36-7e29-45c0-8851-7ee3de635ebc\\c69a785e-5735-4c4b-949d-83288e4d4bda.json",
+      "workflowDirectory": "6c5feb36-7e29-45c0-8851-7ee3de635ebc",
+      "fileName": "c69a785e-5735-4c4b-949d-83288e4d4bda.json",
+      "category": "INVALID_JSON",
+      "reasons": [
+        "Unexpected non-whitespace character after JSON at position 4274 (line 119 column 3)"
+      ]
+    },
+    {
+      "relativePath": "b4ce707a-f59c-407b-b029-b8d97131de3a\\c0785f91-0a1a-4741-a815-1c5a3019910b.json",
+      "absolutePath": "D:\\LE-PRODUCT-NEW\\NewTestFiles\\.runs\\b4ce707a-f59c-407b-b029-b8d97131de3a\\c0785f91-0a1a-4741-a815-1c5a3019910b.json",
+      "workflowDirectory": "b4ce707a-f59c-407b-b029-b8d97131de3a",
+      "fileName": "c0785f91-0a1a-4741-a815-1c5a3019910b.json",
+      "category": "INVALID_JSON",
+      "reasons": [
+        "Unexpected non-whitespace character after JSON at position 21712 (line 711 column 2)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "phase": "Database Phase 3 Step 7B.1",
+  "title": "Output Index Foundation and Readiness Analyzer",
+  "mode": "read-only foundation",
+  "baselineFrontendSha256": "85C63DC6E21DD872F700E2298C5B90532CBF2AB36FC8DE0E53CFAA12EFA01B7E",
+  "baselineEngineSha256": "B728F61A0D1E67CA01F6ADA70A996143C8F304C32A34FA0C4283F24F5C031B06",
+  "databaseWritesEnabled": false,
+  "executionRepositoryIntegrated": false,
+  "frontendModified": false,
+  "engineModified": false,
+  "files": [
+    {
+      "path": "README_STEP7B1.txt",
+      "sha256": "b4b6e3232d000c2eb607e8166c4202cf83d9c6b630a1957bd5d35ae0dc788843",
+      "bytes": 3263
+    },
+    {
+      "path": "STEP7B1_TEST_REPORT.md",
+      "sha256": "92e214c39f2335bc6d2cdc385199cc683d99573412b63b11dc9c7adf3880907e",
+      "bytes": 1925
+    },
+    {
+      "path": "backend/.env.example",
+      "sha256": "6a30ebc3af06bfeae1e98a8502fce4349abb801e1a9fa4f6ac630fffccc06e9b",
+      "bytes": 1250
+    },
+    {
+      "path": "backend/db/executionOutputIndexRepository.js",
+      "sha256": "bfd6ac5582eb20e2dab1c8143b5d04fbb40b869630e3d3d7f96c8e3c1ca5cd03",
+      "bytes": 5948
+    },
+    {
+      "path": "backend/db/outputProjection.js",
+      "sha256": "0e4a7086912fcd6432ae7f27e7fca942f8bbd67836134b0ec0561dcc86cc5dd6",
+      "bytes": 20404
+    },
+    {
+      "path": "backend/package.json",
+      "sha256": "d8e96f2d8cc7c9effa8de4a6bc9f9bc8f35624581206dc7d1015ab65a9adb0ae",
+      "bytes": 593
+    },
+    {
+      "path": "backend/scripts/analyzeExecutionOutputIndexReadiness.js",
+      "sha256": "443cfb2ad24e08bed5722f08bf729f21962260b008d8ba1cbd1fc8d9abe7b8b8",
+      "bytes": 9849
+    },
+    {
+      "path": "backend/scripts/testExecutionOutputProjection.js",
+      "sha256": "193a2e468fe4561bec1a619af263797224d5c235f7a6b21f5db4c071132a6040",
+      "bytes": 4571
+    }
+  ]
+}

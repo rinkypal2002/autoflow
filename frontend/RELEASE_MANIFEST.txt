@@ -1,0 +1,29 @@
+AutoFlow Frontend V1 Stabilized
+Prepared: 2026-08-02
+
+Primary fixes:
+- Same-origin Vite proxy for Products Engine, Vulnerability Scanner, voice, monitor and Ollama.
+- Local API URL normalization without changing remote/customer URLs.
+- CORS-specific error classification instead of misleading authorization errors.
+- Required-field validation before workflow execution.
+- Improved engine action error handling.
+- Removed obsolete duplicate source files.
+- Added frontend stability regression tests.
+- Added Windows verification and startup scripts.
+
+Preparation verification:
+- TypeScript application type-check: PASS
+- Vite configuration type-check: PASS
+- ESLint: PASS (0 errors, 0 warnings)
+- carryForward tests: 68 passed, 0 failed
+- enterprise tests: 123 passed, 0 failed
+- payloadContract tests: 33 passed, 0 failed
+- ports tests: 48 passed, 0 failed
+- vulnerabilityTriage tests: 390 passed, 0 failed
+- frontendStability tests: 10 passed, 0 failed
+
+Final gate on Windows:
+1. Run VERIFY_FRONTEND_V1.cmd
+2. Run START_FRONTEND_V1.cmd
+3. Hard-refresh the browser
+4. Execute Database Health Check against /engine

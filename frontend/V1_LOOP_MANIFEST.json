@@ -1,0 +1,126 @@
+{
+  "artifact": "AutoFlow V1 Loops IMPLEMENTED",
+  "sourceBundle": "AutoFlow_V1_Loop_Source_Bundle.zip",
+  "sourceBundleSha256": "750dce25fec4d5805b856c2689fb08c000cd403c2a229e9f875b9575b19d4e3f",
+  "targetedLoopTests": {
+    "passed": 48,
+    "failed": 0
+  },
+  "syntaxDiagnostics": {
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "V1_LOOP_IMPLEMENTATION.md",
+      "status": "new",
+      "sha256": "6c91818da9601e07cff2bb3399d1944bf5d986c57b6bad7dd647f8c8a0f5e8a0",
+      "originalSha256": null,
+      "size": 2470
+    },
+    {
+      "path": "package.json",
+      "status": "modified",
+      "sha256": "cd12556dfd68e9bc0c908f931c4d40a24c9e95452a7eb7a4bd78d1c749f7a04c",
+      "originalSha256": "2c730ed99fb54ac44b7c5b8d498af482b7a3e019740c44500c7801ff613769a0",
+      "size": 2989
+    },
+    {
+      "path": "scripts/test-v1-loop-control.mjs",
+      "status": "new",
+      "sha256": "475d9b322b055ec58abdc51d19914e05701c712ef48926f74d446fa75a609bf9",
+      "originalSha256": null,
+      "size": 10953
+    },
+    {
+      "path": "src/components/PropertiesPanel.tsx",
+      "status": "unchanged",
+      "sha256": "d40cecf7e8c7fcb1a3ffae930c125e813e34d6a4c712b4aa3e16458ccdf0004d",
+      "originalSha256": "d40cecf7e8c7fcb1a3ffae930c125e813e34d6a4c712b4aa3e16458ccdf0004d",
+      "size": 147765
+    },
+    {
+      "path": "src/components/WorkflowNode.tsx",
+      "status": "modified",
+      "sha256": "988c3dae1e40dd7d7f91e8857f5880963245f9b01419445f7866fac8499bbe5f",
+      "originalSha256": "d6fd9562276b9ca0a1b2814b4056aa610511db8d5967def58a797abd482963b9",
+      "size": 71680
+    },
+    {
+      "path": "src/data/automationCategories.ts",
+      "status": "modified",
+      "sha256": "19cab6d1f95bb221a5872bd612c5056abfd9260bc2c426604c83ad9e2cbebf4c",
+      "originalSha256": "d4d989c4f80f58a2ca0e6b09c719e140e3f02b2eee5746690552ab1cefb33860",
+      "size": 754341
+    },
+    {
+      "path": "src/lib/bindingSources.ts",
+      "status": "modified",
+      "sha256": "1de908924122975c5ec3653bf46e1a3ff7e43ede87f0acc8005f9e854ee69b3f",
+      "originalSha256": "88829279ee1f8949b60070ad9bf0d2001c1632b76728e85ebb7ae7a6d9e75776",
+      "size": 21266
+    },
+    {
+      "path": "src/lib/executionContext.ts",
+      "status": "modified",
+      "sha256": "638f593421c28d1206c68e55513abe0861231cbdaff800764f4e65cfd29453b4",
+      "originalSha256": "872f5c287b3a81b4011962becba513ef4bc3604f543efda1a42aec5fbd16847f",
+      "size": 38255
+    },
+    {
+      "path": "src/lib/executionMode.ts",
+      "status": "unchanged",
+      "sha256": "24f1ea49e7a3c269d0dc33500359fecd88af3fe0553da5870744c124c1f20c33",
+      "originalSha256": "24f1ea49e7a3c269d0dc33500359fecd88af3fe0553da5870744c124c1f20c33",
+      "size": 4473
+    },
+    {
+      "path": "src/lib/executionStatus.ts",
+      "status": "modified",
+      "sha256": "b5eac05a847f2a75bf36bf9531c87f2d0ef642fd62196035c31b7d03b6923124",
+      "originalSha256": "13323b586666601dc7aaf74918b750766e913dd5b8e1f842f2d15739d8f2eab2",
+      "size": 5887
+    },
+    {
+      "path": "src/lib/expression.ts",
+      "status": "unchanged",
+      "sha256": "8fd9e53b0c3d27bd4351fe62990819c6f28c989c076fd3609a0d654a6dca1a74",
+      "originalSha256": "8fd9e53b0c3d27bd4351fe62990819c6f28c989c076fd3609a0d654a6dca1a74",
+      "size": 30996
+    },
+    {
+      "path": "src/lib/loopControl.ts",
+      "status": "new",
+      "sha256": "99bc2f0d98621b78364ec90f65fbd9246c721a105151a09e5e3b89aff8ec9fc9",
+      "originalSha256": null,
+      "size": 17013
+    },
+    {
+      "path": "src/lib/ports.ts",
+      "status": "unchanged",
+      "sha256": "11fef6acb5d0172e1127944cb996c8e4501bd5bfd9543ab972c798204403c131",
+      "originalSha256": "11fef6acb5d0172e1127944cb996c8e4501bd5bfd9543ab972c798204403c131",
+      "size": 17194
+    },
+    {
+      "path": "src/pages/WorkspaceEditorPage.tsx",
+      "status": "modified",
+      "sha256": "e70c52333f50715832eec62d2302530e9a04d0f12346b895c60a505d24fb089a",
+      "originalSha256": "d9a1a945d721d2372f1c6bc773c48ee3c9cf6f4105c1dcda24ab9f1c5c4d835a",
+      "size": 180810
+    },
+    {
+      "path": "src/types/pluginContract.ts",
+      "status": "unchanged",
+      "sha256": "2aa62978b80f95ba6346cb2fc24e4f49843025f726f3b02b9d622b34a5078c61",
+      "originalSha256": "2aa62978b80f95ba6346cb2fc24e4f49843025f726f3b02b9d622b34a5078c61",
+      "size": 18023
+    },
+    {
+      "path": "src/types/workflow.ts",
+      "status": "unchanged",
+      "sha256": "f673573f6eb32dd9dbc1db350dde9096ff955d80eb9cc2d89887661ea5abf055",
+      "originalSha256": "f673573f6eb32dd9dbc1db350dde9096ff955d80eb9cc2d89887661ea5abf055",
+      "size": 19464
+    }
+  ]
+}

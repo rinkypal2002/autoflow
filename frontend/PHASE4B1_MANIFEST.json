@@ -1,0 +1,91 @@
+{
+  "phase": "4B.1",
+  "title": "Engine Registry and Plugin Endpoint Mapping Foundation",
+  "createdAt": "2026-08-05T06:38:42.339697+00:00",
+  "baseline": {
+    "frontendArchive": "AutoFlow_Frontend_V1_Stabilized (2).zip",
+    "frontendSha256": "e4ec383e519ebdc2aa3194d4616a3b19beaae5e2fc17d714ce3aedc2817e59c7",
+    "engineArchive": "Products_Engine_v11_3_foundation (2)(1).zip",
+    "engineSha256": "b728f61a0d1e67ca01f6ada70a996143c8f304c32a34fa0c4283f24f5c031b06",
+    "phase4AAuditSha256": "57130b1ed9db25c9a5f1382b23bfbb0de37c0db2962d42edcc64bad983750332"
+  },
+  "safety": {
+    "databaseWrites": false,
+    "schemaMigrations": false,
+    "engineSourceChanges": false,
+    "frontendCatalogueChanges": false,
+    "applyEndpointAvailable": false
+  },
+  "files": [
+    {
+      "path": "README_PHASE4B1.txt",
+      "bytes": 1333,
+      "sha256": "2f26645d5cce1d62399af7ebd63d945d83d2515c4f298158ab56d386593b57aa"
+    },
+    {
+      "path": "backend/.env.example",
+      "bytes": 2905,
+      "sha256": "11e6635c704d6701fe128a83a3f8e68ddf56deb50cd17dbdfb31beaa001fc34e"
+    },
+    {
+      "path": "backend/.env.step4b1.additions",
+      "bytes": 578,
+      "sha256": "b56000d4417fcae1fdb644d234ffb2979da4561b0cdd9d95a4adc99c10f42ae9"
+    },
+    {
+      "path": "backend/config.js",
+      "bytes": 7152,
+      "sha256": "967e6a9818c10c722d9ef6af76956f472e46ba86e8d40ea4e8b7ce1080f52193"
+    },
+    {
+      "path": "backend/db/pluginEndpointMappingRepository.js",
+      "bytes": 3041,
+      "sha256": "5b352735138129f9386a5f1aac7812ed5bf20a7b515e64d5ba2849918ea20437"
+    },
+    {
+      "path": "backend/lib/pluginRegistryNormalization.js",
+      "bytes": 17529,
+      "sha256": "9256348766ddedf5ac14e91c89f89d4356362f327f1eda37bc02d68283494615"
+    },
+    {
+      "path": "backend/migration_backups/phase4b1-supplied-engine-static-validation.json",
+      "bytes": 1730,
+      "sha256": "60b6dfc62cc1227528c9d172fefd17bfa6cfead20f39189ff9073a436c7bdcef"
+    },
+    {
+      "path": "backend/package.json",
+      "bytes": 1868,
+      "sha256": "ee2a9d1d38899756df7de5f869218f747dbd82fda741dccd183e6a06367ba16d"
+    },
+    {
+      "path": "backend/routes/pluginRegistryMappingRoutes.js",
+      "bytes": 3384,
+      "sha256": "88d263f9a190e5d92357a05c5bed415c77bdcf7bd2713d27d1760e86ea47b6ca"
+    },
+    {
+      "path": "backend/scripts/inspectPluginRegistryMappingReadiness.js",
+      "bytes": 2431,
+      "sha256": "257cd9d331058c18ec46c58026f4bf4350007eaf3f086609dc6869e8f208f130"
+    },
+    {
+      "path": "backend/scripts/testPluginRegistryMappingFoundation.js",
+      "bytes": 10127,
+      "sha256": "f000360a507877df7f0801fbecacdabe0053ce29bdc54004eabe0d451ac72a50"
+    },
+    {
+      "path": "backend/server.js",
+      "bytes": 71793,
+      "sha256": "a8b51a24d8be934f6d0474c1560c18d48f9fa6a6d147b65811ba7acb67b2e7b5"
+    },
+    {
+      "path": "backend/services/engineActionRegistryClient.js",
+      "bytes": 2921,
+      "sha256": "87e2c8f7b18e71ae07574aae9e404f7e6c5a1db71bc39c15b9774bf9ba460256"
+    },
+    {
+      "path": "backend/services/pluginRegistryDryRunService.js",
+      "bytes": 3805,
+      "sha256": "40b727e49b2216244eedf49343aeef09fc415c028d9cfc0957bb0cb2e76c7882"
+    }
+  ]
+}

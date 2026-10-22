@@ -1,0 +1,81 @@
+/* src/style.css */
+.la-esfera-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.la-esfera-main-bg {
+  position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.la-esfera-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
+}
+
+.la-esfera-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+}
+
+.la-esfera-small-logo {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Individual positions for small logos */
+.la-esfera-tl {
+  top: 1rem;
+  left: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.la-esfera-tr {
+  top: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.la-esfera-bl {
+  bottom: 1rem;
+  left: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.la-esfera-br {
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.la-esfera-cl {
+  top: 50%;
+  left: 25%;
+  width: 3rem;
+  height: 3rem;
+  transform: translateY(-50%);
+}
+
+.la-esfera-cr {
+  top: 50%;
+  right: 25%;
+  width: 3rem;
+  height: 3rem;
+  transform: translateY(-50%);
+}

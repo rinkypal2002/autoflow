@@ -1,0 +1,31 @@
+AutoFlow ORCH-1 Server Orchestrator Foundation
+
+Scope:
+- Opt-in server-side execution lane only.
+- Existing React Execute Workflow path is untouched.
+- Supports only: Start -> one non-multipart API plugin -> End.
+- Requires PostgreSQL workspace + execution persistence and execution writes.
+- Persists an initial run and every completed/failed node through existing executionRepository.js.
+- Uses PostgreSQL plugin_endpoint_mapping first; falls back to the saved action API route.
+- Engine calls are pinned to configured ENGINE_URL to avoid arbitrary workflow-controlled hosts.
+- Cross-node bindings, loops, branches, retries, multipart/files and debugger behavior are intentionally rejected in ORCH-1.
+
+Added:
+backend/orchestrator/workflowGraph.js
+backend/orchestrator/executionContext.js
+backend/orchestrator/pluginExecutor.js
+backend/orchestrator/workflowOrchestrator.js
+backend/routes/workflowOrchestratorRoutes.js
+backend/scripts/testOrchestratorFoundation.js
+
+Updated:
+backend/server.js
+backend/config.js
+backend/package.json
+backend/.env.example
+
+Validation performed before packaging:
+- node --check: all new/updated JS files PASS
+- ORCH-1 foundation tests: 5 passed, 0 failed
+- isolated server boot PASS
+- GET /api/orchestrator/status PASS with ORCHESTRATOR_ENABLED=false

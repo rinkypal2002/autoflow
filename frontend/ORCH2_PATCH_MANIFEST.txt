@@ -1,0 +1,68 @@
+AutoFlow ORCH-2 — Server Binding / Execution Context Patch
+Date: 2026-08-12
+
+Purpose
+-------
+Extend the certified ORCH-1 server executor with canonical server-side workflow
+binding semantics while keeping the browser executor untouched.
+
+ORCH-2 certified scope
+----------------------
+- Deterministic linear graph: Start -> one or more normal JSON API plugins -> End
+- {{previous.*}} / {{prev.*}} / {{last.*}}
+- {{steps.<StepName>.*}} and quoted step names
+- {{nodes.<nodeId>.*}}
+- {{vars.*}} / {{variables.*}} for non-secret workflow variables
+- bare carry-forward values with current-node self values taking precedence
+- whole-token native type preservation (arrays/objects/numbers/booleans)
+- mixed-string interpolation
+- canonical path grammar, fallback chains and filters from src/lib/expression.ts
+- two-pass node resolution: carry-forward properties first, then legacy self tokens
+- incremental workflow_execution / node_execution persistence remains unchanged
+
+Still intentionally deferred
+----------------------------
+- conditional/port routing (ORCH-3)
+- loops (ORCH-4)
+- retries/timeouts/error strategy/cancel (ORCH-5)
+- worker leases/recovery/idempotency (ORCH-6)
+- browser Execute Workflow cutover (ORCH-7)
+- multipart/file artifact transfer
+- full frontend payloadContract coercion/validation parity
+
+Canonical resolver provenance
+-----------------------------
+backend/orchestrator/canonical/lib/*.js is compiled directly from the current
+frontend canonical binding sources (expression/pathResolver/carryForward and
+supporting pure utilities). Source SHA-256 values are recorded in:
+  backend/orchestrator/canonical/CANONICAL_SOURCE_SHA256.txt
+This avoids inventing a second binding grammar for the server.
+
+Files added
+-----------
+backend/orchestrator/canonical/lib/expression.js
+backend/orchestrator/canonical/lib/pathResolver.js
+backend/orchestrator/canonical/lib/carryForward.js
+backend/orchestrator/canonical/lib/objectUtils.js
+backend/orchestrator/canonical/lib/dataset.js
+backend/orchestrator/canonical/lib/executionStatus.js
+backend/orchestrator/canonical/CANONICAL_SOURCE_SHA256.txt
+backend/scripts/testOrchestratorBindings.js
+
+Files updated
+-------------
+backend/orchestrator/executionContext.js
+backend/orchestrator/pluginExecutor.js
+backend/orchestrator/workflowGraph.js
+backend/orchestrator/workflowOrchestrator.js
+backend/routes/workflowOrchestratorRoutes.js
+backend/package.json
+backend/server.js   (startup phase label only)
+
+Explicitly untouched
+--------------------
+src/pages/WorkspaceEditorPage.tsx
+all frontend runtime/loop/branch code
+PostgreSQL schema/migrations
+databaseContract.js
+Products Engine

@@ -1,0 +1,24 @@
+Step 7B.5B rollback
+====================
+
+Before extraction, back up these existing files:
+  .env.example
+  package.json
+  src/pages/WorkspaceEditorPage.tsx
+  src/vite-env.d.ts
+
+To roll back:
+1. Stop the Vite frontend.
+2. Restore those four backed-up files.
+3. Delete:
+   src/lib/outputSourceMode.ts
+   src/lib/outputSourceApi.ts
+   src/lib/outputSourceParity.ts
+   tests/outputSourceParity.test.ts
+   README_STEP7B5B.txt
+   STEP7B5B_TEST_REPORT.md
+   STEP7B5B_MANIFEST.json
+4. Remove VITE_EXECUTION_OUTPUT_SOURCE_READ_MODE from the root .env if added.
+5. Run npm run typecheck and npm run build.
+
+Backend Step 7B.5A and PostgreSQL data are not affected.

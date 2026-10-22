@@ -1,0 +1,31 @@
+# Node.js
+**/node_modules/
+
+# Build files
+**/dist/
+**/build/
+
+# Environment variables
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs
+**/logs/
+*.log
+
+# Generated run files
+**/.runs/
+
+# Java Engine WAR
+engine/engine.war
+
+# IDE files
+.idea/
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+# Exclude migration backups containing test data and credentials
+**/migration_backups/

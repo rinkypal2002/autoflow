@@ -1,0 +1,45 @@
+AutoFlow ORCH-4C Server Repeat Until Foundation Patch
+Date: 2026-08-14
+
+Purpose
+-------
+Extend the opt-in Node/Express server orchestrator from certified ORCH-4B While
+support to the next isolated loop capability: Repeat Until.
+
+Scope
+-----
+Supported ORCH-4C certification shape:
+  Start -> Repeat Until [Body] -> one non-multipart API plugin -> Repeat Until
+                           [Done] -> End
+
+Semantics
+---------
+- Repeat Until is post-test: Body always executes at least once.
+- Until condition is evaluated only after Body completion.
+- One-based iteration and zero-based currentIndex/currentKey are exposed.
+- Per-iteration execution_instance_key values remain distinct.
+- Maximum Iterations guard remains canonical (1..10,000 clamp in shared loop state machine).
+- Existing canonical loopControl implementation is reused unchanged.
+- ORCH-1, ORCH-2, ORCH-3, ORCH-4A For Each and ORCH-4B While remain supported.
+- Browser executor remains untouched.
+
+Changed files
+-------------
+backend/package.json
+backend/server.js
+backend/routes/workflowOrchestratorRoutes.js
+backend/orchestrator/workflowGraph.js
+backend/orchestrator/workflowOrchestrator.js
+backend/scripts/testOrchestratorRepeatUntil.js
+
+Validation performed before packaging
+-------------------------------------
+ORCH-1 foundation:          5 passed, 0 failed
+ORCH-2 bindings/context:    7 passed, 0 failed
+ORCH-3 branching/ports:     9 passed, 0 failed
+ORCH-4A For Each:           7 passed, 0 failed
+ORCH-4B While:              7 passed, 0 failed
+ORCH-4C Repeat Until:       7 passed, 0 failed
+Total:                     42 passed, 0 failed
+
+Syntax checks passed for changed JavaScript runtime files.

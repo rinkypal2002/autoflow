@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    // ... your existing compiler options ...
+    
+    // Add this if not present
+    "typeRoots": ["./node_modules/@types", "./src"],
+    
+    // Ensure these are included
+    "types": ["vite/client", "node"],
+    
+    // Make sure module resolution is set properly
+    "moduleResolution": "bundler",
+    
+    // Allow default imports
+    "allowSyntheticDefaultImports": true,
+    
+    // Ensure JSX is enabled
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.d.ts"  // Make sure this includes declaration files
+  ],
+  "exclude": ["node_modules"]
+}

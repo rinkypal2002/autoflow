@@ -1,0 +1,81 @@
+{
+  "phase": "4B.2",
+  "title": "Transactional Plugin Endpoint Mapping Apply",
+  "createdAt": "2026-08-05T12:38:00+05:30",
+  "writesDefault": "disabled",
+  "httpApplyEndpoint": false,
+  "frontendChanges": false,
+  "engineSourceChanges": false,
+  "files": [
+    {
+      "path": "README_PHASE4B2.txt",
+      "sha256": "a8a1306690930a0a8bd7bda62afb8a4fcc9b747bb4aa717d9fd18e561b27e31a",
+      "bytes": 1323
+    },
+    {
+      "path": "backend/.env.example",
+      "sha256": "8fcb3ee7231f6fe93ac23467e85ad1c5e15259105f04b438f56f5a40adbbb201",
+      "bytes": 2993
+    },
+    {
+      "path": "backend/.env.step4b2.additions",
+      "sha256": "2e15173b8570705615d4a302b4083a91ffeac0d4eb222c5df06779886e4717b4",
+      "bytes": 88
+    },
+    {
+      "path": "backend/config.js",
+      "sha256": "f6ca2b7c5c0d747b4d4f56eeaf6720668e13994fdb7aa7290e4a0ede6b47f9ca",
+      "bytes": 7468
+    },
+    {
+      "path": "backend/db/pluginEndpointMappingRepository.js",
+      "sha256": "313e22ec5f6d251f094cd6c54185f1d87f57f5afab0b361005f7f20d94e9ee60",
+      "bytes": 15625
+    },
+    {
+      "path": "backend/lib/pluginRegistryNormalization.js",
+      "sha256": "aa974de14ca12d37e3feb1be0d40da4c2b7c309dbd340568f294d6d9bde811b6",
+      "bytes": 19151
+    },
+    {
+      "path": "backend/package.json",
+      "sha256": "9c3e709588dd8c672bfa9760b90d6be798fe36bae0b70c9cb993def10de6c468",
+      "bytes": 2227
+    },
+    {
+      "path": "backend/routes/pluginRegistryMappingRoutes.js",
+      "sha256": "12a0c69c68d106cd4c8286c38351f9d4563c202443abfc4a013718566e367dbb",
+      "bytes": 3408
+    },
+    {
+      "path": "backend/scripts/applyPluginRegistryMapping.js",
+      "sha256": "ca70c0ee41f54bf4f301ac57a82983624231e3625c82343d0e9e0df03ca8334a",
+      "bytes": 4402
+    },
+    {
+      "path": "backend/scripts/rollbackPluginRegistryMappingApply.js",
+      "sha256": "37d75a97c640a5246a6df3a52521efa644ca34b0fa8cc48a8fef58467b584049",
+      "bytes": 3369
+    },
+    {
+      "path": "backend/scripts/testPluginRegistryMappingApply.js",
+      "sha256": "608c68fe8badbf4d1ae8f28986c81406825c338d2d4c46f5249c3c1c1ac191f3",
+      "bytes": 7744
+    },
+    {
+      "path": "backend/scripts/verifyPluginRegistryMappingApply.js",
+      "sha256": "57459ff3f4197fb2ee5515b65a0596e06a8c3704ebc496b5b51d25bac2aebd27",
+      "bytes": 3264
+    },
+    {
+      "path": "backend/server.js",
+      "sha256": "3ab97773d4dbf8d0fa9463c32285fc6fb553eb7ab387f73ecece3410ee2f9890",
+      "bytes": 71848
+    },
+    {
+      "path": "backend/services/pluginRegistryApplyService.js",
+      "sha256": "e37b20c2adc1ecb49f2a294d5acd70d1e6c21fe0eb4e946439453f35e8b42368",
+      "bytes": 5694
+    }
+  ]
+}

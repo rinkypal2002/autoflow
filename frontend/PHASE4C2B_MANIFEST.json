@@ -1,0 +1,40 @@
+{
+  "phase": "4C.2B",
+  "title": "Critical Plugin Mapping Source Remediation",
+  "sourceOverwrite": false,
+  "patches": 7,
+  "databaseWrites": 0,
+  "catalogueActionRemovals": 0,
+  "executionProviderCutover": false,
+  "files": [
+    {
+      "path": "README_PHASE4C2B.txt",
+      "sha256": "49790c70b75c29ed619241f997e88dbf7e97673e3ec0b396b6b593f14587fdae",
+      "bytes": 1605
+    },
+    {
+      "path": "scripts/apply-phase4c2b-critical-mapping-remediation.mjs",
+      "sha256": "e0a857c40ba3e3399cded9b7a02bfeaa8fdc34dc05ac2d0202c3294645b891ad",
+      "bytes": 7184
+    },
+    {
+      "path": "scripts/rollback-phase4c2b-critical-mapping-remediation.mjs",
+      "sha256": "15d367d0fddcaf8ed80026e3a13f5866fbbabafedd5f57737837b56dd83ea5c3",
+      "bytes": 2030
+    },
+    {
+      "path": "tests/pluginMappingCriticalRemediation.test.ts",
+      "sha256": "36960678a95cc385ab8abdec05f6e0bc1ff583bb2918ba6ef1e8b5656b169dda",
+      "bytes": 3736
+    }
+  ],
+  "validation": {
+    "applyScriptFixture": "PASS",
+    "idempotentReapply": "PASS",
+    "rollbackFixture": "PASS",
+    "typescriptTypecheck": "PASS",
+    "fixtureAppliedChanges": 7,
+    "fixtureActionMarkerCountBefore": 262,
+    "fixtureActionMarkerCountAfter": 262
+  }
+}

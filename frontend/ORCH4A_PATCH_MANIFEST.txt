@@ -1,0 +1,61 @@
+AutoFlow ORCH-4A — Server For Each Loop Foundation
+Date: 2026-08-12
+
+Purpose
+-------
+First controlled-loop cutover for the Node backend orchestrator. This patch ports
+the already-certified frontend loop state machine into the server runtime and
+adds a deliberately narrow live execution shape:
+
+  Start -> For Each [Body] -> one normal non-multipart plugin -> For Each
+                     [Done] -> End
+
+Included
+--------
+- Canonical compiled port of src/lib/loopControl.ts.
+- For Each Body / Done state transitions.
+- Literal/bound collection resolution through the existing canonical resolver.
+- currentItem, currentIndex, currentKey, iteration, loop, loops and loopStack aliases.
+- Canonical Maximum Iterations guard (clamped to 10,000).
+- Per-iteration executionInstanceKey using the certified loopExecutionKey format.
+- Repeated physical node executions remain distinct for PostgreSQL persistence.
+- Empty collections route directly through Done.
+- Iteration result aggregation on the Done payload.
+- ORCH-1, ORCH-2 and ORCH-3 execution paths remain supported.
+- Browser executor remains untouched and server orchestration remains opt-in.
+
+Intentionally deferred
+----------------------
+- While
+- Repeat Until
+- Break
+- Continue
+- Nested loops
+- Multiple plugins / branches inside the loop Body
+- Conditions on ORCH-4A loop edges
+- Multipart/file actions inside the loop
+- Retry/timeout/cancel/recovery leasing (later orchestrator phases)
+
+New test command
+----------------
+npm run test:orchestrator-foreach
+
+Local regression certification before packaging
+------------------------------------------------
+ORCH-1 foundation:         5 passed, 0 failed
+ORCH-2 bindings/context:   7 passed, 0 failed
+ORCH-3 branching/ports:    9 passed, 0 failed
+ORCH-4A For Each:          7 passed, 0 failed
+Node syntax checks:        PASS
+
+Files changed/added
+-------------------
+backend/orchestrator/canonical/lib/loopControl.js
+backend/orchestrator/canonical/CANONICAL_SOURCE_SHA256.txt
+backend/orchestrator/executionContext.js
+backend/orchestrator/workflowGraph.js
+backend/orchestrator/workflowOrchestrator.js
+backend/routes/workflowOrchestratorRoutes.js
+backend/scripts/testOrchestratorForEach.js
+backend/server.js
+backend/package.json

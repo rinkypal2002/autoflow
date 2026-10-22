@@ -1,0 +1,69 @@
+{
+  "phase": "Database Phase 3 Step 7B.3",
+  "title": "Controlled Output-Index Apply, Verification and Rollback",
+  "baselinePhase2Sha256": "85C63DC6E21DD872F700E2298C5B90532CBF2AB36FC8DE0E53CFAA12EFA01B7E",
+  "baselineStep7B2OverlaySha256": "C99A45E443ACA18DC56DBAD9159C6ED78415E9CAE1B210843972EBD3459585F0",
+  "baselineStep7B2CompleteSha256": "96F0D720EB5630EAB432C933F190D9720E0ED2919703116B2EE6AFA8AE44B06A",
+  "userCertifiedDryRun": {
+    "finalNodeExecutions": 750,
+    "workflowExecutions": 115,
+    "workflows": 10,
+    "projectedRows": 8257,
+    "businessRows": 5335,
+    "technicalRows": 2172,
+    "rawRows": 750,
+    "truncatedNodes": 0,
+    "duplicateBindingPaths": 0,
+    "secretLeakRows": 0,
+    "writesCommitted": 0,
+    "rollbackParity": true
+  },
+  "applyRequiresConfirmation": "APPLY_OUTPUT_INDEX_BACKFILL",
+  "rollbackRequiresConfirmation": "ROLLBACK_OUTPUT_INDEX_BACKFILL",
+  "frontendModified": false,
+  "productsEngineModified": false,
+  "executionSnapshotsModified": false,
+  "liveOutputIndexWriteIntegrationEnabled": false,
+  "files": [
+    {
+      "path": "README_STEP7B3.txt",
+      "sha256": "b56b94ea5439ce15ea5149be467cf8f39c02da9c792eab13f46564f320f015ab",
+      "bytes": 4683
+    },
+    {
+      "path": "STEP7B3_TEST_REPORT.md",
+      "sha256": "d6f1c0e3f6e28b573f3747f0522874aa23d443568d8b4e066a6389f281efa722",
+      "bytes": 1560
+    },
+    {
+      "path": "backend/package.json",
+      "sha256": "a6fcfc1585dae5b4e74be782d04a8dd01475e5e6f76e9ba65fd5c0003e311b5f",
+      "bytes": 1044
+    },
+    {
+      "path": "backend/scripts/applyExecutionOutputIndexBackfill.js",
+      "sha256": "09a7360e1e30a2d29a7e6b9fb1a53093414a723842678dc80d17d0bd8d380c0a",
+      "bytes": 13562
+    },
+    {
+      "path": "backend/scripts/outputIndexBackfillCommon.js",
+      "sha256": "fe531baa44bc62cd42543453d0306379af5c115dd058b630807855fbdeb64605",
+      "bytes": 9572
+    },
+    {
+      "path": "backend/scripts/rollbackExecutionOutputIndexBackfill.js",
+      "sha256": "3941fe640e6f274be4939e73c10f37d85058406eedad6baa5fcdc5689479adda",
+      "bytes": 5652
+    },
+    {
+      "path": "backend/scripts/testOutputIndexBackfillTools.js",
+      "sha256": "c053ec17b1d0773301083fdfc111b06e2d37c5d6f185443f03040ed7463e374d",
+      "bytes": 1520
+    },
+    {
+      "path": "backend/scripts/verifyExecutionOutputIndexBackfill.js",
+      "sha256": "3ad8e5ca224f94677ee79300374d3f05c44fb06f4bd6406719bdf956d3d73961",
+      "bytes": 5208
+    }
+  ]
+}

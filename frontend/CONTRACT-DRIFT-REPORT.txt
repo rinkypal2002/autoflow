@@ -1,0 +1,196 @@
+
+CONTRACT DRIFT REPORT
+──────────────────────────────────────────────────────────────────────────────
+Registry endpoints : 306
+Java endpoints     : 403
+Java DTOs          : 367
+Matched            : 270   (unmatched: 36)
+Fields compared    : 985
+──────────────────────────────────────────────────────────────────────────────
+ERROR 0   WARN 46   INFO 151
+
+
+WARNINGS  (46)
+──────────────────────────────────────────────────────────────────────────────
+
+  TYPE_MISMATCH — 10
+    Google Drive › Download
+      /drive/download › fileName  [ui:file vs java:String]
+      UI file vs Java text
+    Google Drive › Sharing - Info
+      /drive/sharing-info › fileName  [ui:file vs java:String]
+      UI file vs Java text
+    OneDrive › Copy
+      /drive/copy › sourcePath  [ui:file vs java:String]
+      UI file vs Java text
+    Web GUI Automation › Save as PDF
+      /api/automation/save-pdf › saveAsFilename  [ui:file vs java:String]
+      UI file vs Java text
+    Web GUI Automation › Download Image
+      /api/automation/downloadimage › outputFilePath  [ui:file vs java:String]
+      UI file vs Java text
+    Web GUI Automation › Web File Upload
+      /api/automation/webfile-upload › filePath  [ui:file vs java:String]
+      UI file vs Java text
+    Amazon S3 › TestConnection
+      /aws/s3/test-connection › region  [ui:string vs java:Aws3Region]
+      UI text into a nested DTO — only parses if it is valid JSON
+    Amazon EC2 › TestConnection
+      /aws/s3/test-connection › region  [ui:string vs java:Aws3Region]
+      UI text into a nested DTO — only parses if it is valid JSON
+    Amazon EC2 › create-keypair
+      /api/ec2/create-keypair › localFilePath  [ui:file vs java:String]
+      UI file vs Java text
+    Java Filter and Flow › AbortCheck
+      /api/filter/abort-check › action  [ui:string vs java:AbortAction]
+      UI text into a nested DTO — only parses if it is valid JSON
+
+  NO_JAVA_ENDPOINT — 36
+    OneDrive › Create
+      /onedrive/create-folder
+      Registry declares this endpoint but no Java controller mapping was found.
+    OneDrive › Upload
+      /onedrive/upload
+      Registry declares this endpoint but no Java controller mapping was found.
+    OneDrive › Download
+      /onedrive/download
+      Registry declares this endpoint but no Java controller mapping was found.
+    OneDrive › Move
+      /onedrive/move
+      Registry declares this endpoint but no Java controller mapping was found.
+    OneDrive › Rename
+      /onedrive/rename
+      Registry declares this endpoint but no Java controller mapping was found.
+    OneDrive › Delete
+      /onedrive/delete
+      Registry declares this endpoint but no Java controller mapping was found.
+    OneDrive › List Children
+      /onedrive/list
+      Registry declares this endpoint but no Java controller mapping was found.
+    OneDrive › Search
+      /onedrive/search
+      Registry declares this endpoint but no Java controller mapping was found.
+    OneDrive › Share
+      /onedrive/share
+      Registry declares this endpoint but no Java controller mapping was found.
+    JumpCloud › test-connection
+      /api/jumpcloud/test-connection
+      Registry declares this endpoint but no Java controller mapping was found.
+    JumpCloud › list-user
+      /api/jumpcloud/list-user
+      Registry declares this endpoint but no Java controller mapping was found.
+    JumpCloud › create-user-system
+      /api/jumpcloud/create-user-system
+      Registry declares this endpoint but no Java controller mapping was found.
+    JumpCloud › create-group
+      /api/jumpcloud/create-group
+      Registry declares this endpoint but no Java controller mapping was found.
+    JumpCloud › delete-group
+      /api/jumpcloud/delete-group
+      Registry declares this endpoint but no Java controller mapping was found.
+    JumpCloud › delete-user
+      /api/jumpcloud/delete-user
+      Registry declares this endpoint but no Java controller mapping was found.
+    Asana › Get all templates
+      /api/v1/adobe/templates/list
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › Creds
+      /api/v1/adobe/auth/exchange
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › transient-documents
+      /api/v1/adobe/transient-documents
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › Create Templates
+      /api/v1/adobe/templates/create
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › Get all templates
+      /api/engine/v1/adobe/templates/list
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › Templates Download
+      /api/v1/adobe/templates/download
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › Create Agreement
+      /api/v1/adobe/agreements/create
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › Get all agreements
+      /api/v1/adobe/agreements/list
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › Agreement Status
+      /api/v1/adobe/agreements/status
+      Registry declares this endpoint but no Java controller mapping was found.
+    Adobe Sign › Get Agreement Participants
+      /api/v1/adobe/agreements/participants
+      Registry declares this endpoint but no Java controller mapping was found.
+    … and 11 more
+
+INFO  (151)
+──────────────────────────────────────────────────────────────────────────────
+
+  NO_VALID — 145
+    Microsoft Teams › Create Team
+      /api/v1/teams/createteam
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Create Channel
+      /api/v1/teams/createchannels
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Get Channels
+      /api/v1/teams/getallchannel
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Add Member to Channel
+      /api/v1/teams/addmembertochannel
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Get Teams
+      /api/v1/teams/getteams
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Get Channels with Teams
+      /api/v1/teams/getchannelsteams
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Send Channel Message
+      /api/v1/teams/send-chat
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Get Channel Members
+      /api/v1/teams/members/channel
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Send 1:1 Message
+      /api/v1/teams/send-chat-member
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Get Chat List
+      /api/v1/teams/chatlistuser
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Get Chat Groups
+      /api/v1/teams/chat/groups
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Get Chat Group Details
+      /api/v1/teams/singlechatgroup
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Create Chat Group
+      /api/v1/teams/create-chat-group
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Add Members to Group
+      /api/v1/teams/add-members
+      TeamsEntity is bound without @Valid — required fields are not enforced server-side.
+    Microsoft Teams › Create Meeting
+      /api/v1/teams/create-meeting
+      MeetingEntity is bound without @Valid — required fields are not enforced server-side.
+    … and 130 more
+
+  DTO_NOT_RESOLVED — 6
+    Google Drive › Create Folder
+      /drive/create-folder
+      Could not resolve DTO "Map<String," unambiguously — skipped rather than guessed.
+    Zoho Desk › Create-Ticket
+      /zohodesk/create-ticket
+      Could not resolve DTO "ZohoRequests.CreateTicket" unambiguously — skipped rather than guessed.
+    Zoho Desk › Get-Tickets
+      /zohodesk/get-tickets
+      Could not resolve DTO "ZohoRequests.GetTickets" unambiguously — skipped rather than guessed.
+    Zoho Desk › Update-Ticket
+      /zohodesk/update-ticket
+      Could not resolve DTO "ZohoRequests.UpdateTicket" unambiguously — skipped rather than guessed.
+    Zoho Desk › Delete-Ticket
+      /zohodesk/delete-ticket
+      Could not resolve DTO "ZohoRequests.DeleteTicket" unambiguously — skipped rather than guessed.
+    Zoho Desk › Download-Attachment
+      /zohodesk/download-attachment
+      Could not resolve DTO "ZohoRequests.DownloadAttachment" unambiguously — skipped rather than guessed.
+

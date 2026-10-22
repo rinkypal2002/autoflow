@@ -1,0 +1,158 @@
+
+.rest-editor {
+  color: #e5e7eb;
+  background: #0b1020;
+  font-family: Inter, Arial, sans-serif;
+  width: 100%;
+  min-width: 0;
+  font-size: 13px;
+}
+
+.rest-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.rest-heading strong {
+  font-size: 15px;
+  color: #f8fafc;
+}
+
+.rest-heading span,
+.rest-editor small {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.rest-url-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.rest-url-row select {
+  width: 95px;
+  flex-shrink: 0;
+  color: #34d399;
+  font-weight: 600;
+}
+
+.rest-url-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.rest-editor input,
+.rest-editor select,
+.rest-editor textarea {
+  background: #101827;
+  border: 1px solid #293449;
+  color: #e5e7eb;
+  border-radius: 7px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  font: inherit;
+}
+
+.rest-editor textarea {
+  resize: vertical;
+  font-family: Consolas, monospace;
+  line-height: 1.5;
+}
+
+.rest-editor input:focus,
+.rest-editor textarea:focus,
+.rest-editor select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.rest-tabs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  border-bottom: 1px solid #263247;
+  padding-bottom: 5px;
+}
+
+.rest-tabs button {
+  background: transparent;
+  color: #94a3b8;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.rest-tabs button.active {
+  color: #60a5fa;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.rest-content {
+  padding-top: 18px;
+}
+
+.rest-content h4 {
+  margin: 0 0 15px;
+  font-size: 13px;
+}
+
+.rest-content label {
+  display: block;
+  color: #94a3b8;
+  margin: 14px 0 7px;
+}
+
+.rest-pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.rest-pair {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rest-pair input {
+  min-width: 0;
+  flex: 1;
+}
+
+.rest-pair select {
+  width: 75px;
+}
+
+.rest-pair button {
+  border: none;
+  background: #34202a;
+  color: #fb7185;
+  border-radius: 6px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.rest-add {
+  background: #14263c;
+  color: #60a5fa;
+  border: 1px dashed #345477;
+  border-radius: 7px;
+  padding: 10px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.rest-checkbox {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.rest-checkbox input {
+  width: auto;
+}

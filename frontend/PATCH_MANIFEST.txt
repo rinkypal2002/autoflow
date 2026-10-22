@@ -1,0 +1,16 @@
+AutoFlow Workflow Control Canvas Logo Fix
+Date: 2026-08-13
+
+Purpose:
+- Fix saved/hydrated Workflow Control nodes on the canvas falling back to api.png.
+- Resolve dedicated canvas logos by stable workflow control type when action.logo is absent.
+
+Canvas mappings:
+- workflow-for-each     -> for_each.png
+- workflow-while        -> while.png
+- workflow-repeat-until -> repeat_until.png
+- workflow-break        -> break.png
+- workflow-continue     -> continue.png
+
+Start/End behavior remains unchanged and continues to use start.png/end.png.
+No scheduler, loop-control, orchestrator, binding, database, or backend code is modified.

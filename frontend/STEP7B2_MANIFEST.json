@@ -1,0 +1,31 @@
+{
+  "phase": "Database Phase 3",
+  "step": "7B.2",
+  "name": "Output Index Transactional Dry-Run Backfill",
+  "generatedAt": "2026-08-03T13:29:23.232199+00:00",
+  "baseline": "Phase 3 Step 7B.1",
+  "databaseWritesCommitted": false,
+  "applyModeIncluded": false,
+  "files": [
+    {
+      "path": "backend/scripts/dryRunExecutionOutputIndexBackfill.js",
+      "bytes": 16472,
+      "sha256": "541b9fc4ae5d24b405896ac851edc66bc7f35174aecbfe2becf956584ecb2825"
+    },
+    {
+      "path": "backend/package.json",
+      "bytes": 684,
+      "sha256": "841264ed0c8b3e80786d91ba815bfa73b8c8a5368ad26d9b64c2d51a0921a62d"
+    },
+    {
+      "path": "README_STEP7B2.txt",
+      "bytes": 1941,
+      "sha256": "460e32a06d2ae907530cb85d2f212a0dce29673f293e5e356aa222b8f707b89b"
+    },
+    {
+      "path": "STEP7B2_TEST_REPORT.md",
+      "bytes": 684,
+      "sha256": "68c00fc7be6f1f50a23eb0aff856e05fc45bddd9cc0abd10d0d0075f1285d9d2"
+    }
+  ]
+}

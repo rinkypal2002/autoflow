@@ -1,0 +1,34 @@
+AutoFlow ORCH-3 — Server Branching + Named Ports
+Date: 2026-08-12
+
+Purpose
+-------
+Extends the already-certified ORCH-2 server executor with acyclic branching,
+named source-port payload routing, empty-branch suppression, sandboxed connection
+conditions, branch-local previous semantics, and fan-in de-duplication.
+
+Runtime parity intentionally ported from the existing browser implementation
+rather than inventing a second routing model:
+- Connection without sourcePort -> complete source output (legacy compatibility)
+- Named sourcePort -> declared port payloadPath slice
+- skipWhenEmpty -> suppress only countable zero-record branches
+- metadata.routeWhenEmpty=true -> force route even when empty
+- connection.condition -> canonical sandboxed evaluateCondition (no eval/new Function)
+- branch-local previous -> port payload; full source remains previous.$output / steps.<Name>
+- fan-in target waits for currently queued inbound sources, then executes once
+- targetPort remains metadata; current browser runtime does not alter payload by targetPort
+
+Still deferred
+--------------
+- Loop/cycle execution (ORCH-4)
+- Retry/timeout/error-strategy/cancellation (ORCH-5)
+- Durable worker leases/recovery/idempotency (ORCH-6)
+- Browser Execute Workflow cutover (ORCH-7)
+- Multipart/file artifact transport
+
+Regression tests validated before packaging
+-------------------------------------------
+ORCH-1 foundation:       5 passed, 0 failed
+ORCH-2 bindings/context: 7 passed, 0 failed
+ORCH-3 branching/ports:  8 passed, 0 failed
+Node syntax checks:      PASS

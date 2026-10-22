@@ -1,0 +1,50 @@
+AutoFlow ORCH-4B — Server While Foundation
+===========================================
+
+Scope
+-----
+Adds the first server-owned While loop execution lane on top of certified ORCH-4A.
+
+Certified graph for this increment
+----------------------------------
+Start -> While [Body] -> one non-multipart API plugin -> While
+               [Done] -> End
+
+Semantics preserved from the certified browser loop runtime
+------------------------------------------------------------
+- While is pre-test: condition is evaluated before every Body iteration.
+- Candidate iteration is one-based (1,2,3,...).
+- currentIndex/currentKey are zero-based (0,1,2,...).
+- Body/Done output ports are mandatory for the controlled cycle.
+- Results aggregate one completed Body output per iteration.
+- Each controller/body iteration gets a stable execution_instance_key.
+- Maximum Iterations is enforced before executing a Body beyond the guard.
+- Conditions use the canonical sandboxed evaluator; no eval/new Function.
+
+Deliberately deferred
+---------------------
+- Repeat Until
+- Break / Continue
+- Nested loops
+- Multiple Body plugins
+- Branching inside a loop Body
+- Multipart/file Body actions
+
+Files
+-----
+backend/orchestrator/workflowGraph.js
+backend/orchestrator/workflowOrchestrator.js
+backend/routes/workflowOrchestratorRoutes.js
+backend/scripts/testOrchestratorWhile.js
+backend/package.json
+backend/server.js
+
+Local certification performed before packaging
+----------------------------------------------
+ORCH-1 foundation:        5 passed, 0 failed
+ORCH-2 bindings/context:  7 passed, 0 failed
+ORCH-3 branching/ports:   9 passed, 0 failed
+ORCH-4A For Each:         7 passed, 0 failed
+ORCH-4B While:            7 passed, 0 failed
+Total orchestrator tests: 35 passed, 0 failed
+Node syntax checks:       PASS

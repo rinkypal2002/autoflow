@@ -1,0 +1,34 @@
+AutoFlow ORCH-3.1 - Dataset Payload Contract Normalization Fix
+Date: 2026-08-12
+
+Purpose
+-------
+Fix the live ORCH-3 Filter Rows failure where a custom inline dataset entered in
+the dataset-source field is stored as JSON text. The server orchestrator was
+binding that text directly into the request body, while Products Engine expects
+`data` as an actual JSON array.
+
+Changes
+-------
+1. backend/orchestrator/canonical/lib/payloadContract.js
+   - Canonical port of the existing frontend payload-contract coercion layer.
+
+2. backend/orchestrator/pluginExecutor.js
+   - After binding resolution, reconcile resolved action properties against
+     `action.propertyConfig` before building the engine request body.
+   - Declared array/object fields parse JSON text into native structures.
+   - Declared text fields remain text even if they look like JSON.
+   - Contract errors fail before engine dispatch with a clear orchestrator error.
+
+3. backend/scripts/testOrchestratorBranching.js
+   - Adds live-shape regression coverage for Filter Rows inline dataset JSON.
+   - ORCH-3 suite increases from 8 to 9 tests.
+
+Non-goals / unchanged
+---------------------
+- No frontend changes.
+- No workflow graph/routing changes.
+- No loop changes.
+- No Products Engine changes.
+- No database migration.
+- Browser executor remains untouched.
